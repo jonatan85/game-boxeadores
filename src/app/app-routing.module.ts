@@ -10,6 +10,18 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'boxeadores',
+    loadChildren: () => import('./pages/boxeadores/boxeadores.module').then( m => m.BoxeadoresPageModule)
+  },
+  {
+    path: 'formulario-crear',
+    loadChildren: () => import('./pages/formulario-crear/formulario-crear.module').then( m => m.FormularioCrearPageModule)
+  },
+  {
+    path: 'ring',
+    loadChildren: () => import('./pages/ring/ring.module').then( m => m.RingPageModule)
   }
 ];
 
